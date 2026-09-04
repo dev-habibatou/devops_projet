@@ -4,9 +4,10 @@
   "scripts": {
     "start": "node index.js",
     "test": "jest",
-    "lint": "eslint"
+    "lint": "eslint ."
   },
   "devDependencies": {
+    "eslint": "^8.57.1",
     "jest": "^30.5.1"
   }
 }
