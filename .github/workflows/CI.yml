@@ -30,3 +30,7 @@ jobs:
 
       - name: Run tests
         run: npm test
+        
+      - name: Run list
+        run: npm run list
+        
