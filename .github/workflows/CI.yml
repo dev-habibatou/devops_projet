@@ -33,6 +33,7 @@ jobs:
         run: npm run lint
 
       - name: Run tests
+<<<<<<< HEAD
         run: npm test
 
       - name: Setup Docker Buildx
@@ -55,3 +56,10 @@ jobs:
           context: .
           push: true
           tags: USERNAME/devops_projet-api:latest
+=======
+        run: npm run test
+        
+      - name: Run list
+        run: npm run list
+        
+>>>>>>> 84c8a6f (Add CI/CD pipeline)
