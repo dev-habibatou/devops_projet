@@ -5,5 +5,7 @@
     "start": "node index.js",
     "test": "jest"
   },
-  "dependencies": {}
+  "devDependencies": {
+    "jest": "^30.5.1"
+  }
 }
