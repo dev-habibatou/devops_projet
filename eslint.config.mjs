@@ -1,13 +1,11 @@
 import js from "@eslint/js";
 import globals from "globals";
 import pluginReact from "eslint-plugin-react";
-import { defineConfig } from "eslint/config";
 
-export default defineConfig([
+export default [
   { 
     files: ["**/*.{js,mjs,cjs,jsx}"], 
-    plugins: { js }, 
-    extends: ["js/recommended"], 
+    ...js.configs.recommended,
     languageOptions: { 
       globals: {
         ...globals.node,
@@ -19,8 +17,8 @@ export default defineConfig([
     ...pluginReact.configs.flat.recommended,
     settings: {
       react: {
-        version: "18.2.0" // Version fixe pour contourner le bug de l'API ESLint v10
+        version: "18.2.0"
       }
     }
   }
-]);
+];
